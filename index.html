@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="calculator-container">
+      <div class="header">
+        <div class="input">0</div>
+      </div>
+      <!-- 1ª linha -->
+      <button onclick="allClear()" class="all-clear">AC</button>
+      <button onclick="operation(this)" class="operation-button" value="/">
+        ÷
+      </button>
+      <button onclick="operation(this)" class="operation-button" value="*">
+        ×
+      </button>
+      <!-- 2º linha -->
+      <button onclick="writeNumber(this)">7</button>
+      <button onclick="writeNumber(this)">8</button>
+      <button onclick="writeNumber(this)">9</button>
+      <button onclick="operation(this)" class="operation-button" value="-">
+        -
+      </button>
+      <!-- 3º linha -->
+      <button onclick="writeNumber(this)">4</button>
+      <button onclick="writeNumber(this)">5</button>
+      <button onclick="writeNumber(this)">6</button>
+      <button onclick="operation(this)" class="operation-button" value="+">
+        +
+      </button>
+      <!-- 4ª linha -->
+      <button onclick="writeNumber(this)">1</button>
+      <button onclick="writeNumber(this)">2</button>
+      <button onclick="writeNumber(this)">3</button>
+      <button onclick="calculate()" class="equal-button">=</button>
+      <!-- 5ª linha -->
+      <button onclick="writeNumber(this)" class="zero-button">0</button>
+      <button onclick="decimal(this)" class="float-button">.</button>
+    </div>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
